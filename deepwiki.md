@@ -68,10 +68,10 @@
 
 | 仓库 | 说明 | 备注 |
 |---|---|---|
-| jupytext/jupytext | notebook ↔ Markdown/脚本 双向转换 | 7.2k★ 但 DeepWiki 未收录 |
-| olavocarvalho/vscode-runtime-notebook-mcp | VS Code Jupyter runtime 内嵌 MCP | 小项目（16★） |
-| plmbr/notebook-intelligence | JupyterLab AI 扩展 | 小项目（324★） |
-| deepelementlab/jupyter-studio | AI 原生 JupyterLab | 小项目（53★） |
-| jupyterlab/extension-template | JupyterLab 扩展官方 copier 脚手架模板（jupyter-diagrams.md 引用） | 86★，DeepWiki 未收录 |
+| [jupytext/jupytext](https://github.com/jupytext/jupytext) | notebook ↔ Markdown/脚本 双向转换 | 7.2k★ 但 DeepWiki 未收录 |
+| [olavocarvalho/vscode-runtime-notebook-mcp](https://github.com/olavocarvalho/vscode-runtime-notebook-mcp) | VS Code Jupyter runtime 内嵌 MCP | 小项目（16★） |
+| [plmbr/notebook-intelligence](https://github.com/plmbr/notebook-intelligence) | JupyterLab AI 扩展 | 小项目（324★） |
+| [deepelementlab/jupyter-studio](https://github.com/deepelementlab/jupyter-studio) | AI 原生 JupyterLab | 小项目（53★） |
+| [jupyterlab/extension-template](https://github.com/jupyterlab/extension-template) | JupyterLab 扩展官方 copier 脚手架模板（jupyter-diagrams.md 引用） | 86★，DeepWiki 未收录 |
 
 > DeepWiki 收录不受 Star 数保证（jupytext 未被收录），可在 https://deepwiki.com 页面提交"Index your code with Devin"申请收录。
