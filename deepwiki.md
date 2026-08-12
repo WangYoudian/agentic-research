@@ -1,9 +1,9 @@
 # DeepWiki 收录验证清单
 
-> 对 `index.md` 与 `jupyter-ai.md` 中全部 45 个 GitHub 仓库逐一验证 DeepWiki 收录情况。
+> 对 `index.md`、`jupyter-ai.md` 与 `jupyter-diagrams.md` 中全部 46 个 GitHub 仓库逐一验证 DeepWiki 收录情况。
 > **验证方法**：DeepWiki 对未收录项目也会返回 200 占位页（~34KB），故不能以状态码判断；本清单以页面内容是否含 **"Last indexed"** 标志为准（已收录页面 ~1MB+ 且含该标志）。验证日期：2026-08-12。
 
-**汇总：45 个仓库中 41 个已收录 ✅，4 个未收录 ❌**
+**汇总：46 个仓库中 41 个已收录 ✅，5 个未收录 ❌**
 
 ---
 
@@ -64,7 +64,7 @@
 
 ---
 
-## 三、未收录明细（4 个）
+## 三、未收录明细（5 个）
 
 | 仓库 | 说明 | 备注 |
 |---|---|---|
@@ -72,5 +72,6 @@
 | olavocarvalho/vscode-runtime-notebook-mcp | VS Code Jupyter runtime 内嵌 MCP | 小项目（16★） |
 | plmbr/notebook-intelligence | JupyterLab AI 扩展 | 小项目（324★） |
 | deepelementlab/jupyter-studio | AI 原生 JupyterLab | 小项目（53★） |
+| jupyterlab/extension-template | JupyterLab 扩展官方 copier 脚手架模板（jupyter-diagrams.md 引用） | 86★，DeepWiki 未收录 |
 
 > DeepWiki 收录不受 Star 数保证（jupytext 未被收录），可在 https://deepwiki.com 页面提交"Index your code with Devin"申请收录。
