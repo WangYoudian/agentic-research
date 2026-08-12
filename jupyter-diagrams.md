@@ -134,7 +134,7 @@ flowchart TB
     classDef ext fill:#fff3cd,stroke:#f0a500,stroke-width:2px
     classDef core fill:#e8f4fd,stroke:#1f6feb,stroke-width:1.5px
     class EXT_FRONT,SEXT ext
-    class JL,LU,REST,PROTO2,IK2,NBF2 core
+    class UI1,LU,REST,PROTO2,IK2,NBF2 core
 ```
 
 ---
@@ -150,7 +150,7 @@ flowchart TB
 | **Server 扩展**（jupyter-server Extension） | Python | 注册到 jupyter-server 的 REST 端点与生命周期 | 后端 API、数据服务、认证、内容提供 | 同为 `pip install`，通过 entry point 自动发现 |
 
 **嵌入流程（以自建扩展为例）**：
-1. 用 `copier` 模板（`jupyterlab/copier-templates`）或 `jupyter labextension create` 生成骨架
+1. 用官方 `copier` 模板（`jupyterlab/extension-template`）生成骨架：`copier copy https://github.com/jupyterlab/extension-template <目标目录>`
 2. 前端扩展在 `src/index.ts` 中导出 `plugin`，通过 `JupyterFrontEnd` 注册命令、加 widget 到 `ILayoutRestorer` / 侧边栏
 3. Server 扩展在 Python 包中实现 `ServerExtension`（或 `load_jupyter_server_extension`），在 `jupyter_server_config` 注册 handler
 4. 打包发布到 PyPI / conda；用户 `pip install` 后 `jupyter labextension list` 可见；JupyterLab 启动时自动加载联邦扩展
