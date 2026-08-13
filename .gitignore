@@ -1,2 +1,18 @@
 .reasonix/
 reasonix.toml
+
+# Jupyter 自动生成的检查点目录
+.ipynb_checkpoints/
+
+# JupyterLab 侧边栏 POC —— node / 前端构建产物
+node_modules/
+lib/
+build/
+*.tsbuildinfo
+jupyterlab-sidebar-poc/sidebar_poc/labextension/
+
+# Python / uv
+.venv/
+__pycache__/
+*.egg-info/
+dist/
