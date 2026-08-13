@@ -4,6 +4,9 @@ reasonix.toml
 # Jupyter 自动生成的检查点目录
 .ipynb_checkpoints/
 
+# VS Code 本地设置（只忽略 settings.json，保留其余 .vscode 文件可跟踪）
+.vscode/settings.json
+
 # JupyterLab 侧边栏 POC —— node / 前端构建产物
 node_modules/
 lib/
