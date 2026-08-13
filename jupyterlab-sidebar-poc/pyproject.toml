@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sidebar-poc"
+version = "0.1.0"
+description = "A JupyterLab sidebar extension POC (left sidebar panel)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "BSD-3-Clause" }
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 4",
+    "Framework :: Jupyter :: JupyterLab :: Extensions",
+    "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+]
+dependencies = ["jupyterlab>=4.2,<5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["sidebar_poc"]
+
+# 把构建出的 labextension 装进环境的 share/jupyter/labextensions（非 editable 安装时自动注册）
+[tool.hatch.build.targets.wheel.shared-data]
+"sidebar_poc/labextension" = "share/jupyter/labextensions/sidebar-poc"

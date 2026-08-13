@@ -1,0 +1,36 @@
+{
+  "name": "sidebar-poc",
+  "version": "0.1.0",
+  "description": "A JupyterLab sidebar extension POC (left sidebar panel).",
+  "keywords": ["jupyter", "jupyterlab", "jupyterlab-extension"],
+  "license": "BSD-3-Clause",
+  "files": ["lib/**/*.{js,js.map,d.ts}", "style/index.css"],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:labextension:dev",
+    "build:prod": "npm run clean && npm run build:lib && npm run build:labextension",
+    "build:lib": "tsc --sourceMap",
+    "build:labextension": "jupyter-builder build .",
+    "build:labextension:dev": "jupyter-builder build --development True .",
+    "clean": "rimraf lib tsconfig.tsbuildinfo build",
+    "watch:lib": "tsc -w --sourceMap",
+    "watch:labextension": "jupyter-builder watch ."
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^4.2.0",
+    "@lumino/widgets": "^2.3.2"
+  },
+  "devDependencies": {
+    "@jupyter/builder": "^1.2.2",
+    "css-loader": "^6.11.0",
+    "rimraf": "^6.0.1",
+    "style-loader": "^3.3.4",
+    "typescript": "~5.8.2"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "sidebar_poc/labextension"
+  }
+}
