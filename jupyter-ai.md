@@ -14,7 +14,7 @@
 - [七、生态资源列表（awesome 合集）](#resources)
 - [八、数据说明](#data)
 
-**另见**：[DeepWiki 收录验证清单 →](deepwiki.md) ｜ [Jupyter 生态与架构图 →](jupyter-diagrams.md)
+**另见**：[DeepWiki 收录验证清单 →](deepwiki.md) ｜ [Jupyter 底层架构深析（协议/内核/服务端/扩展/格式）→](jupyter-architecture.md)
 
 ---
 
