@@ -1,0 +1,30 @@
+# JupyterLab 扩展 dev 环境（docker-compose）
+# 用法: docker-compose -f jupyterlab-docker-dev/docker-compose.yml up -d --build
+# 说明:
+#   - 首次启动会做定制化 build（镜像里烘焙进扩展），然后跑 JupyterLab
+#   - 之后改前端代码，宿主机跑 `make build-ext`（或 watch）重新构建 labextension，
+#     挂载目录会同步进容器，浏览器刷新即可 —— 无需重建镜像
+services:
+  jupyterlab:
+    build:
+      context: ..
+      dockerfile: jupyterlab-docker-dev/Dockerfile
+      target: runtime
+      args:
+        EXT_SRC: jupyterlab-sidebar-poc
+        EXT_NAME: sidebar-poc
+    image: jlab-ext:dev
+    container_name: jlab-ext-dev
+    ports:
+      - "8888:8888"
+    volumes:
+      # 热更新：宿主机 build 出的 labextension 挂进 conda 的 labextensions
+      # （该目录镜像内已存在且 jovyan 可写；别挂到 /home/jovyan/.local 下，
+      #   否则中间父目录会被以 root 创建 → PermissionError: .../runtime）
+      - ../jupyterlab-sidebar-poc/sidebar_poc/labextension:/opt/conda/share/jupyter/labextensions/sidebar-poc
+      # 工作目录（notebook 存这里）
+      - ./notebooks:/home/jovyan/work
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: "devtoken"
+    restart: unless-stopped
