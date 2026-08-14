@@ -1,9 +1,9 @@
 # DeepWiki 收录验证清单
 
-> 对 `index.md`、`jupyter-ai.md` 及原 `jupyter-diagrams.md` 所引仓库共 46 个 GitHub 仓库逐一验证 DeepWiki 收录情况。
+> 对 `index.md`、`jupyter-ai.md` 及原 `jupyter-diagrams.md` 所引仓库共 47 个 GitHub 仓库逐一验证 DeepWiki 收录情况。
 > **验证方法**：DeepWiki 对未收录项目也会返回 200 占位页（~34KB），故不能以状态码判断；本清单以页面内容是否含 **"Last indexed"** 标志为准（已收录页面 ~1MB+ 且含该标志）。验证日期：2026-08-12。
 
-**汇总：46 个仓库中 41 个已收录 ✅，5 个未收录 ❌**
+**汇总：47 个仓库中 42 个已收录 ✅，5 个未收录 ❌**
 
 ---
 
@@ -28,6 +28,7 @@
 | Claude Code | https://github.com/anthropics/claude-code | https://deepwiki.com/anthropics/claude-code | ✅ |
 | Claude Agent SDK | https://github.com/anthropics/claude-agent-sdk-python | https://deepwiki.com/anthropics/claude-agent-sdk-python | ✅ |
 | Prime Agent | https://github.com/PrimeIntellect-ai/prime-agent | https://deepwiki.com/PrimeIntellect-ai/prime-agent | ✅ |
+| DeepSeek Harness | https://github.com/deepseek-ai/deepseek-harness | https://deepwiki.com/deepseek-ai/deepseek-harness | ✅ |
 | opencode | https://github.com/opencode-ai/opencode | https://deepwiki.com/opencode-ai/opencode | ✅ |
 | OpenClaw | https://github.com/openclaw/openclaw | https://deepwiki.com/openclaw/openclaw | ✅ |
 

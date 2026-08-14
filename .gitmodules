@@ -1,0 +1,18 @@
+[submodule "agent-framework/pi"]
+	path = agent-framework/pi
+	url = https://github.com/earendil-works/pi
+[submodule "agent-framework/hermes-agent"]
+	path = agent-framework/hermes-agent
+	url = https://github.com/NousResearch/hermes-agent
+[submodule "agent-framework/claude-code"]
+	path = agent-framework/claude-code
+	url = https://github.com/anthropics/claude-code
+[submodule "agent-framework/prime-agent"]
+	path = agent-framework/prime-agent
+	url = https://github.com/PrimeIntellect-ai/prime-agent
+[submodule "agent-framework/openclaw"]
+	path = agent-framework/openclaw
+	url = https://github.com/openclaw/openclaw
+[submodule "agent-framework/deepseek-harness"]
+	path = agent-framework/deepseek-harness
+	url = https://github.com/deepseek-ai/deepseek-harness.git
