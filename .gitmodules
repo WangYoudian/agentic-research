@@ -16,3 +16,12 @@
 [submodule "agent-framework/deepseek-harness"]
 	path = agent-framework/deepseek-harness
 	url = https://github.com/deepseek-ai/deepseek-harness.git
+[submodule "agent-framework/jupyter-ai-agents"]
+	path = agent-framework/jupyter-ai-agents
+	url = https://github.com/datalayer/jupyter-ai-agents
+[submodule "agent-framework/jupyter-mcp-server"]
+	path = agent-framework/jupyter-mcp-server
+	url = https://github.com/datalayer/jupyter-mcp-server
+[submodule "agent-framework/jupyter-ai"]
+	path = agent-framework/jupyter-ai
+	url = https://github.com/jupyterlab/jupyter-ai
