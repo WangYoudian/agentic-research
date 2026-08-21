@@ -32,8 +32,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # jupyterlab（提供 jupyter-builder CLI，供 npm run build:prod 调用）
+COPY jupyterlab-docker-dev/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir uv \
-    && uv pip install --system --no-cache-dir "jupyterlab>=4.2,<5"
+    && uv pip install --system --no-cache-dir -r /tmp/requirements.txt
 
 COPY ${EXT_SRC} /src/ext
 WORKDIR /src/ext
